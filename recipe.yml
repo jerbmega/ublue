@@ -19,6 +19,13 @@ description: jerbmega's custom ublue image
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
   - python3-pip # needed for yafti (the first boot installer)
+  - i3
+  - kitty
+  - lightdm
+  - lightdm-gtk
+  - thunar
+  - thunar-volman
+  - thunar-archive-plugin
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
