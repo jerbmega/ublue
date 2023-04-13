@@ -21,7 +21,6 @@ rpms:
   - python3-pip # needed for yafti (the first boot installer)
   - i3
   - kitty
-  - greetd
   - thunar
   - thunar-volman
   - thunar-archive-plugin
