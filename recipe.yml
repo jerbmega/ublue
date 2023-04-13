@@ -30,6 +30,10 @@ rpms:
   - tint2
   - rofi
   - tailscale
+  - feh
+  - picom
+  - unclutter
+  - maim
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
