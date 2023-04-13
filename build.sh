@@ -17,6 +17,8 @@ echo "---"
 # install yafti to install flatpaks on first boot, https://github.com/ublue-os/yafti
 pip install --prefix=/usr yafti
 
+pip install --prefix=/usr pywal
+
 # add a package group for yafti using the packages defined in recipe.yml
 yq -i '.screens.applications.values.groups.Custom.description = "Flatpaks defined by the image maintainer"' /etc/yafti.yml
 yq -i '.screens.applications.values.groups.Custom.default = true' /etc/yafti.yml
