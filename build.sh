@@ -2,6 +2,10 @@
 # remove the default firefox (from fedora) in favor of the flatpak
 rpm-ostree override remove firefox firefox-langpacks
 
+# add extra repositories
+cd /etc/yum.repos.d
+wget https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+
 echo "-- Installing RPMs defined in recipe.yml --"
 rpm_packages=$(yq '.rpms[]' < /tmp/ublue-recipe.yml)
 for pkg in $(echo -e "$rpm_packages"); do \
