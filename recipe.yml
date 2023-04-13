@@ -21,11 +21,12 @@ rpms:
   - python3-pip # needed for yafti (the first boot installer)
   - i3
   - kitty
-  - lightdm
-  - lightdm-gtk
+  - greetd
   - thunar
   - thunar-volman
   - thunar-archive-plugin
+  - file-roller
+  - stow
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
