@@ -26,7 +26,6 @@ rpms:
   - thunar-archive-plugin
   - file-roller
   - stow
-  - sway
   - tint2
   - rofi
   - tailscale
@@ -35,6 +34,9 @@ rpms:
   - unclutter
   - maim
   - ImageMagick
+  - zsh
+  - playerctl
+  - light
   
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
