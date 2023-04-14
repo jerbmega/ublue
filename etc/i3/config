@@ -21,7 +21,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec distrobox create -i ghcr.io/jerbmega/boxkit -n boxkit -Y && kitty distrobox enter boxkit -- /bin/zsh
-#bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Shift+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
