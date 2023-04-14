@@ -1,8 +1,12 @@
-# Starting point
+# My uBlue image
 
 [![build-ublue](https://github.com/jerbmega/ublue/actions/workflows/build.yml/badge.svg)](https://github.com/jerbmega/ublue/actions/workflows/build.yml)
 
-This is my personal uBlue derivative with i3 and extra system utilities.
+This is my personal uBlue image with i3 and extra system utilities. For better or worse, it's i3 and Sway because some programs I use (looking at you, Discord) don't currently work properly over Wayland.
+
+It is designed to be used in cojunction with [my Boxkit image](https://github.com/jerbmega/boxkit), and this is the default setup, providing an ephemeral environment at all times in the CLI that can easily be nuked and reprovisioned if desired.
+
+This image is *unfinished* and is not stable for daily use. I do not use this in production yet, you shouldn't either.
 
 For more info, check out the [uBlue homepage](https://ublue.it/) and the [main uBlue repo](https://github.com/ublue-os/main/)
 
