@@ -20,7 +20,7 @@ font pango:Noto Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec distrobox create -i ghcr.io/jerbmega/boxkit -n boxkit -Y && kitty distrobox enter boxkit
+bindsym $mod+Return exec distrobox create -i ghcr.io/jerbmega/boxkit -n boxkit -Y && kitty distrobox enter boxkit -- /bin/zsh
 #bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
