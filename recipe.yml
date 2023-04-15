@@ -21,13 +21,13 @@ rpms:
 - arc-theme
 - brightnessctl
 - dbus-x11
+- emptty
 - feh
 - file-roller
 - i3
 - ImageMagick
 - kitty
 - la-capitaine-cursor-theme
-- lightdm-gtk
 - lxappearance
 - maim
 - pamixer

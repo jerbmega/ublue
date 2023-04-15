@@ -1,3 +1,0 @@
-[default_session]
-command = "tuigreet --cmd /bin/bash --remember-session"
-user = "greetd"
