@@ -7,7 +7,7 @@ cd /etc/yum.repos.d
 wget https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 # don't forget to s/37/38 when we switch
 wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-37.repo
-wget https://copr.fedorainfracloud.org/coprs/alebastr/sway-extras/repo/fedora-37/alebastr-sway-extras-fedora-37.repo
+wget https://copr.fedorainfracloud.org/coprs/fnux/ly/repo/fedora-37/fnux-ly-fedora-37.repo
 
 echo "-- Installing RPMs defined in recipe.yml --"
 rpm_packages=$(yq '.rpms[]' < /tmp/ublue-recipe.yml)
