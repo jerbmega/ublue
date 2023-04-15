@@ -177,21 +177,17 @@ for_window [title="^Origin$"] floating enable
 for_window [title="^SteamTinkerLaunch$"] floating enable
 
 # Autostart
-# TODO: for uBlue, have this run an autoexec file in $HOME.
-# Keep stuff like picom, refshift, tint2, wal, stuff that's always in the image.
-# Anything that would be overlayed, Flatpak'd or potentially dangerous (x0vncserver) should be kept out.
 exec_always picom
+exec eval "$(dbus-launch --sh-syntax --exit-with-session)"
 exec redshift
 exec tint2
-exec_always wal -R
+exec_always wal -i /usr/share/backgrounds/ori_lumapools.png
 exec_always source "${HOME}/.cache/wal/colors.sh" && dunst -lb "${color0:-#F0F0F0}" -nb "${color0:-#F0F0F0}" -cb "${color0:-#F0F0F0}" -lf"${color15:=#000000}" -cf"${color15:=#000000}" -nf"${color15:=#000000}" 
 exec nm-applet
-exec_always com.discordapp.Discord --no-sandbox --ignore-gpu-blocklist --disable-features=UseOzonePlatform --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
 exec lxqt-policykit-agent
-exec ckb-next -b
 exec unclutter
-exec x0vncserver -rfbauth ~/.vnc/passwd
-exec vorta
+exec "${HOME}/.config/ublue_i3_autostart.sh"
+exec_always "${HOME}/.config/ublue_i3_autostart_always.sh"
 
 # Print screen with Prt Sc. button
 bindsym Print exec ${HOME}/bin/screenshot-region
