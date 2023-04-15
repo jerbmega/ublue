@@ -167,8 +167,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness'
+bindsym XF86MonBrightnessUp exec brightnessctl set +50%   # increase screen brightness
+bindsym XF86MonBrightnessDown exec brightnessctl set 50%- # decrease screen brightness
 
 # Workspace assignments
 assign [class="Steam"] 2

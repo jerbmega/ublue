@@ -19,15 +19,14 @@ description: jerbmega's custom ublue image
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
 - arc-theme
+- brightnessctl
 - dbus-x11
 - feh
 - file-roller
-- greetd-tuigreet
 - i3
 - ImageMagick
 - kitty
 - la-capitaine-cursor-theme
-- light
 - lightdm-gtk
 - lxappearance
 - maim
