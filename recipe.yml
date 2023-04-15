@@ -28,6 +28,8 @@ rpms:
 - kitty
 - la-capitaine-cursor-theme
 - light
+- lightdm-gtk
+- lxappearance
 - maim
 - pamixer
 - papirus-icon-theme
