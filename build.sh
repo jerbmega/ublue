@@ -17,6 +17,10 @@ for pkg in $(echo -e "$rpm_packages"); do \
 done
 echo "---"
 
+# By default, greetd will fail to work due to SELinux. This works around that problem.
+semanage fcontext -a -ff -t xdm_exec_t /usr/bin/greetd
+restorecon /usr/bin/greetd
+
 pip install --prefix=/usr yafti
 pip install --prefix=/usr pywal
 
