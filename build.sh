@@ -21,6 +21,8 @@ pip install --prefix=/usr pywal
 
 systemctl enable lightdm
 
+chmod +x /etc/X11/xinit/Xclients
+
 # add a package group for yafti using the packages defined in recipe.yml
 yq -i '.screens.applications.values.groups.Custom.description = "Flatpaks defined by the image maintainer"' /etc/yafti.yml
 yq -i '.screens.applications.values.groups.Custom.default = true' /etc/yafti.yml
