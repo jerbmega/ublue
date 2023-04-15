@@ -22,12 +22,12 @@ rpms:
 - dbus-x11
 - feh
 - file-roller
+- greetd-tuigreet
 - i3
 - ImageMagick
 - kitty
 - la-capitaine-cursor-theme
 - light
-- ly
 - maim
 - pamixer
 - papirus-icon-theme
