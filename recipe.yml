@@ -18,31 +18,32 @@ description: jerbmega's custom ublue image
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
-  - python3-pip # needed for yafti (the first boot installer)
-  - i3
-  - kitty
-  - thunar
-  - thunar-volman
-  - thunar-archive-plugin
-  - file-roller
-  - stow
-  - tint2
-  - rofi
-  - tailscale
-  - feh
-  - picom
-  - unclutter
-  - maim
-  - ImageMagick
-  - zsh
-  - playerctl
-  - light
-  - pamixer
-  - arc-theme
-  - papirus-icon-theme
-  - la-capitaine-cursor-theme
-  - redshift
-  - dbus-x11
+- arc-theme
+- dbus-x11
+- feh
+- file-roller
+- i3
+- ImageMagick
+- kitty
+- la-capitaine-cursor-theme
+- light
+- lightdm
+- maim
+- pamixer
+- papirus-icon-theme
+- picom
+- playerctl
+- python3-pip
+- redshift
+- rofi
+- stow
+- tailscale
+- thunar
+- thunar-archive-plugin
+- thunar-volman
+- tint2
+- unclutter
+- zsh
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
