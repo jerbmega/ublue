@@ -21,6 +21,7 @@ rpms:
 - arc-theme
 - brightnessctl
 - dbus-x11
+- dunst
 - emptty
 - feh
 - file-roller
@@ -30,9 +31,12 @@ rpms:
 - la-capitaine-cursor-theme
 - libadwaita
 - lxappearance
+- lxqt-policykit
 - maim
+- mousepad
 - pamixer
 - papirus-icon-theme
+- pavucontrol
 - picom
 - playerctl
 - python3-pip
@@ -43,9 +47,7 @@ rpms:
 - thunar
 - thunar-archive-plugin
 - thunar-volman
-- tint2
 - unclutter
-- zsh
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.

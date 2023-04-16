@@ -24,9 +24,6 @@ systemctl enable emptty
 
 chmod +x etc/xdg/tint2/executors/*
 
-# Install Nix for Fleek
-cd /tmp && wget https://raw.githubusercontent.com/dnkmmr69420/nix-with-selinux/main/silverblue-installer.sh && chmod +x silverblue-installer.sh && ./silverblue-installer.sh
-
 # add a package group for yafti using the packages defined in recipe.yml
 yq -i '.screens.applications.values.groups.Custom.description = "Flatpaks defined by the image maintainer"' /etc/yafti.yml
 yq -i '.screens.applications.values.groups.Custom.default = true' /etc/yafti.yml
