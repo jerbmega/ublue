@@ -28,6 +28,7 @@ rpms:
 - ImageMagick
 - kitty
 - la-capitaine-cursor-theme
+- libadwaita
 - lxappearance
 - maim
 - pamixer
