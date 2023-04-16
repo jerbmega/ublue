@@ -1,0 +1,21 @@
+#!/bin/bash
+
+muted=$(pamixer --get-mute)
+vol=$(pamixer --get-volume)
+
+if [[ $muted = "false" ]]; then
+	if [[ $vol -ge 65 ]]; then
+		echo ~/.config/tint2/executors/icons/audio-volume-high.svg
+		echo "$vol%"
+	elif [[ $vol -ge 40 ]]; then
+			echo ~/.config/tint2/executors/icons/audio-volume-medium.svg
+			echo "$vol%"
+	elif
+	       [[ $vol -ge 0 ]]; then
+       			echo ~/.config/tint2/executors/icons/audio-volume-low.svg
+	 		echo "$vol%"		
+	fi
+else
+	echo ~/.config/tint2/executors/icons/audio-volume-muted.svg
+	echo "muted"
+fi

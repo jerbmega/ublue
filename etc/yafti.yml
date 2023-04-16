@@ -23,6 +23,8 @@ screens:
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
         - run: echo "PATH=\$HOME/.local/share/flatpak/exports/bin:\$PATH" >> .profile
         - run: echo "PATH=\$HOME/.local/share/flatpak/exports/bin:\$PATH" >> .bash_profile
+        - run: mkdir -p $HOME/.config/rofi
+        - run: echo "@import \"~/.cache/wal/colors-rofi-dark\"" >> $HOME/config/rofi/config.rasi
   applications:
     source: yafti.screen.package
     values:
