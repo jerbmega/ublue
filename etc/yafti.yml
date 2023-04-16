@@ -21,6 +21,7 @@ screens:
         - run: flatpak remote-delete fedora --force
         - run: flatpak remove --system --noninteractive --all
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+        - run: echo "PATH=$HOME/.local/share/flatpak/exports/bin:$PATH" >> .profile
   applications:
     source: yafti.screen.package
     values:
@@ -30,7 +31,7 @@ screens:
       groups:
         Core:
           description: Core Applications
-          default: true
+          default: false
           packages:
             - Backup: org.gnome.DejaDup
             - Calculator: org.gnome.Calculator
