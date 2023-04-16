@@ -25,6 +25,7 @@ rpms:
 - emptty
 - feh
 - file-roller
+- fontawesome-fonts
 - i3
 - ImageMagick
 - kitty
@@ -34,11 +35,13 @@ rpms:
 - lxqt-policykit
 - maim
 - mousepad
+- google-noto-fonts-common
 - pamixer
 - papirus-icon-theme
 - pavucontrol
 - picom
 - playerctl
+- polybar
 - python3-pip
 - redshift
 - rofi
@@ -47,7 +50,6 @@ rpms:
 - thunar
 - thunar-archive-plugin
 - thunar-volman
-- tint2
 - unclutter
 
 # These Flatpaks (from flathub) will be available for install on boot

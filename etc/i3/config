@@ -180,7 +180,7 @@ for_window [title="^SteamTinkerLaunch$"] floating enable
 exec_always picom
 exec eval "$(dbus-launch --sh-syntax --exit-with-session)"
 exec redshift
-exec tint2
+exec /etc/polybar/launch.sh
 exec_always wal -i /usr/share/backgrounds/ori_lumapools.png
 exec_always source "${HOME}/.cache/wal/colors.sh" && dunst -lb "${color0:-#F0F0F0}" -nb "${color0:-#F0F0F0}" -cb "${color0:-#F0F0F0}" -lf"${color15:=#000000}" -cf"${color15:=#000000}" -nf"${color15:=#000000}" 
 exec nm-applet

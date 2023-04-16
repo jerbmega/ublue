@@ -1,7 +1,0 @@
-#!/bin/bash
-
-  mem=`free -t | awk 'FNR == 2 {printf("%.0f"), $3/$2*100}'`
-  echo ~/.config/tint2/executors/icons/indicator-sensors-memory.svg
-  echo $mem%
-
-
