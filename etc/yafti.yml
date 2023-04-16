@@ -22,6 +22,7 @@ screens:
         - run: flatpak remove --system --noninteractive --all
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
         - run: echo "PATH=\$HOME/.local/share/flatpak/exports/bin:\$PATH" >> .profile
+        - run: echo "PATH=\$HOME/.local/share/flatpak/exports/bin:\$PATH" >> .bash_profile
   applications:
     source: yafti.screen.package
     values:
