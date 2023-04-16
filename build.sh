@@ -20,6 +20,7 @@ echo "---"
 pip install --prefix=/usr yafti
 pip install --prefix=/usr pywal
 
+systemctl set-default graphical.target
 systemctl enable emptty
 
 chmod +x etc/xdg/tint2/executors/*
