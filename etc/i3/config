@@ -186,6 +186,7 @@ exec_always source "${HOME}/.cache/wal/colors.sh" && dunst -lb "${color0:-#F0F0F
 exec nm-applet
 exec lxqt-policykit-agent
 exec unclutter
+exec /usr/bin/yafti /etc/yafti.yml
 exec "${HOME}/.config/ublue_i3_autostart.sh"
 exec_always "${HOME}/.config/ublue_i3_autostart_always.sh"
 
