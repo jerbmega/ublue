@@ -47,6 +47,7 @@ rpms:
 - thunar
 - thunar-archive-plugin
 - thunar-volman
+- tint2
 - unclutter
 
 # These Flatpaks (from flathub) will be available for install on boot
