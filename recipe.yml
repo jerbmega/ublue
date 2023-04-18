@@ -18,6 +18,7 @@ description: jerbmega's custom ublue image
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
+- alacritty
 - arc-theme
 - brightnessctl
 - dbus-x11
@@ -27,7 +28,6 @@ rpms:
 - fontawesome-fonts
 - i3
 - ImageMagick
-- kitty
 - la-capitaine-cursor-theme
 - libadwaita
 - lightdm-gtk
