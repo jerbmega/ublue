@@ -19,12 +19,14 @@ echo "---"
 
 
 rm david35mm-pamixer-fedora-37.repo
+rm tailscale.repo
 popd
 
 pip install --prefix=/usr yafti
 pip install --prefix=/usr pywal
 
 systemctl enable lightdm
+systemctl enable tailscaled
 
 # LightDM workaround, remove once https://github.com/coreos/rpm-ostree/issues/4369 is fixed
 systemctl enable ublue-lightdm-workaround
