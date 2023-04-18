@@ -7,7 +7,6 @@ pushd /etc/yum.repos.d
 wget https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 # don't forget to s/37/38 when we switch
 wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-37.repo
-wget https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/repo/fedora-37/peterwu-rendezvous-fedora-37.repo
 
 #TODO: we can make this process much faster if we make rpm-ostree install them all in one shot
 echo "-- Installing RPMs defined in recipe.yml --"
@@ -18,15 +17,17 @@ for pkg in $(echo -e "$rpm_packages"); do \
 done
 echo "---"
 
+
 rm david35mm-pamixer-fedora-37.repo
-rm peterwu-rendezvous-fedora-37.repo
 popd
 
 pip install --prefix=/usr yafti
 pip install --prefix=/usr pywal
 
-systemctl set-default graphical.target
-systemctl enable emptty
+systemctl enable lightdm
+
+# LightDM workaround, remove once https://github.com/coreos/rpm-ostree/issues/4369 is fixed
+systemctl enable ublue-lightdm-workaround
 
 # add a package group for yafti using the packages defined in recipe.yml
 yq -i '.screens.applications.values.groups.Custom.description = "Flatpaks defined by the image maintainer"' /etc/yafti.yml

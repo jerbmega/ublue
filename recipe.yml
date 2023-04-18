@@ -22,7 +22,6 @@ rpms:
 - brightnessctl
 - dbus-x11
 - dunst
-- emptty
 - feh
 - file-roller
 - fontawesome-fonts
@@ -31,6 +30,7 @@ rpms:
 - kitty
 - la-capitaine-cursor-theme
 - libadwaita
+- lightdm-gtk
 - lxappearance
 - lxqt-policykit
 - maim
@@ -45,7 +45,6 @@ rpms:
 - python3-pip
 - redshift
 - rofi
-- stow
 - tailscale
 - thunar
 - thunar-archive-plugin

@@ -14,12 +14,15 @@ COPY usr /usr
 # copied from the official container image as it's not avaible as an rpm
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
+RUN mkdir -p /var/lib/alternatives
+
 # copy and run the build script
 COPY build.sh /tmp/build.sh
 RUN chmod +x /tmp/build.sh && /tmp/build.sh
 
 COPY late-etc /etc
 RUN chmod +x /etc/polybar/launch.sh
+RUN chmod +x /etc/ublue-lightdm-workaround.sh
 
 # clean up and finalize container build
 RUN rm -rf \
