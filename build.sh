@@ -5,8 +5,7 @@ rpm-ostree override remove firefox firefox-langpacks
 # add extra repositories
 pushd /etc/yum.repos.d
 wget https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-# don't forget to s/37/38 when we switch
-wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-37.repo
+wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-38.repo
 
 #TODO: we can make this process much faster if we make rpm-ostree install them all in one shot
 echo "-- Installing RPMs defined in recipe.yml --"
