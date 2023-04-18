@@ -50,6 +50,7 @@ rpms:
 - thunar-archive-plugin
 - thunar-volman
 - unclutter
+- xrandr
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
