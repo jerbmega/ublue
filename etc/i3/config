@@ -179,6 +179,7 @@ for_window [title="^SteamTinkerLaunch$"] floating enable
 # Autostart
 exec_always picom
 exec eval "$(dbus-launch --sh-syntax --exit-with-session)"
+exec /usr/libexec/geoclue-2.0/demos/agent
 exec redshift
 exec /etc/polybar/launch.sh
 exec_always wal -i /usr/share/backgrounds/ori_lumapools.png
