@@ -18,7 +18,7 @@ Even though this is a personal image, I added some options to allow for customiz
 
 Use `~/.config/ublue/i3_autostart.sh` for programs that i3 should start once, and `~/.config/ublue/i3_autostart_always.sh` for programs i3 should run on every WM reload.
 
-### Screnshots
+### Screenshots
 
 Maim is included in the base image which allows for custom screenshot scripts. This allows the user to choose the exact behavior of the Print Screen key.
 
