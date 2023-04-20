@@ -189,13 +189,13 @@ exec /usr/libexec/lxqt-policykit-agent
 exec unclutter
 exec /usr/bin/yafti /etc/yafti.yml
 exec "${HOME}/.config/ublue_i3_autostart.sh"
-exec_always "${HOME}/.config/ublue_i3_autostart_always.sh"
+exec_always "${HOME}/.config/ublue/i3_autostart_always.sh"
 
 # Print screen with Prt Sc. button
-bindsym Print exec ${HOME}/bin/screenshot-region
+bindsym Print exec ${HOME}/.config/ublue/i3_screenshot_region.sh
 
 # Print screen with Prt Sc. button (whole screen)
-bindsym shift+Print exec ${HOME}/bin/screenshot
+bindsym shift+Print exec ${HOME}/.config/ublue/i3_screenshot.sh
 
 # Disable titlebars
 new_window pixel 0
