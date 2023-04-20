@@ -50,6 +50,7 @@ rpms:
 - thunar-archive-plugin
 - thunar-volman
 - unclutter
+- xclip
 - xrandr
 - virt-manager
 
