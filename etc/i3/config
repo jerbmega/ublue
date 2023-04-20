@@ -185,7 +185,7 @@ exec /etc/polybar/launch.sh
 exec_always wal -i /usr/share/backgrounds/ori_lumapools.png
 exec_always source "${HOME}/.cache/wal/colors.sh" && dunst -lb "${color0:-#F0F0F0}" -nb "${color0:-#F0F0F0}" -cb "${color0:-#F0F0F0}" -lf"${color15:=#000000}" -cf"${color15:=#000000}" -nf"${color15:=#000000}" 
 exec nm-applet
-exec lxqt-policykit-agent
+exec /usr/libexec/lxqt-policykit-agent
 exec unclutter
 exec /usr/bin/yafti /etc/yafti.yml
 exec "${HOME}/.config/ublue_i3_autostart.sh"
