@@ -188,7 +188,7 @@ exec nm-applet
 exec /usr/libexec/lxqt-policykit-agent
 exec unclutter
 exec /usr/bin/yafti /etc/yafti.yml
-exec "${HOME}/.config/ublue_i3_autostart.sh"
+exec "${HOME}/.config/ublue/i3_autostart.sh"
 exec_always "${HOME}/.config/ublue/i3_autostart_always.sh"
 
 # Print screen with Prt Sc. button
