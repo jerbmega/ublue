@@ -29,6 +29,7 @@ systemctl enable tailscaled
 
 # LightDM workaround, remove once https://github.com/coreos/rpm-ostree/issues/4369 is fixed
 systemctl enable ublue-lightdm-workaround
+systemctl enable ublue-libvirt-workaround
 
 # add a package group for yafti using the packages defined in recipe.yml
 yq -i '.screens.applications.values.groups.Custom.description = "Flatpaks defined by the image maintainer"' /etc/yafti.yml

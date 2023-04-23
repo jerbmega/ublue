@@ -23,6 +23,7 @@ RUN chmod +x /tmp/build.sh && /tmp/build.sh
 COPY late-etc /etc
 RUN chmod +x /etc/polybar/launch.sh
 RUN chmod +x /etc/ublue-lightdm-workaround.sh
+RUN chmod +x /etc/ublue-libvirt-workaround.sh
 
 # clean up and finalize container build
 RUN rm -rf \

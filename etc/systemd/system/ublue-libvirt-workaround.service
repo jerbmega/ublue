@@ -1,0 +1,14 @@
+# Libvirt install from a container is currently bugged.
+# Same story as LightDM, the user isn't made when layered.
+
+[Unit]
+Description=Work around broken libvirtd install
+Before=virtqemud.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/ublue-libvirt-workaround.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
