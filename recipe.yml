@@ -30,6 +30,8 @@ rpms:
 - ImageMagick
 - la-capitaine-cursor-theme
 - libadwaita
+- libvirt-client
+- libvirt-daemon-kvm
 - lightdm-gtk
 - lxappearance
 - lxqt-policykit
