@@ -53,6 +53,7 @@ rpms:
 - thunar-volman
 - unclutter
 - xclip
+- xfce4-settings
 - xrandr
 - virt-manager
 
