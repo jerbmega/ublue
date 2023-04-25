@@ -51,6 +51,7 @@ rpms:
 - thunar
 - thunar-archive-plugin
 - thunar-volman
+- tumbler
 - unclutter
 - xclip
 - xfce4-settings
