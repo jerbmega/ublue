@@ -10,6 +10,13 @@ COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY etc /etc
 COPY usr /usr
 
+# copy scripts
+RUN mkdir /tmp/scripts
+COPY scripts /tmp/scripts
+RUN find /tmp/scripts -type f -exec chmod +x {} \;
+
+COPY ${RECIPE} /tmp/ublue-recipe.yml
+
 # yq used in build.sh and the setup-flatpaks recipe to read the recipe.yml
 # copied from the official container image as it's not avaible as an rpm
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
