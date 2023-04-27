@@ -32,6 +32,7 @@ rpms:
 - feh
 - file-roller
 - fontawesome-fonts
+- gvfs-mtp
 - i3
 - ImageMagick
 - la-capitaine-cursor-theme
