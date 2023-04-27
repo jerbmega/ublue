@@ -24,6 +24,7 @@ scripts:
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
 - alacritty
+- android-tools
 - arc-theme
 - brightnessctl
 - dbus-x11
