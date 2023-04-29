@@ -26,6 +26,7 @@ rpms:
 - alacritty
 - android-tools
 - arc-theme
+- bees
 - brightnessctl
 - dbus-x11
 - dunst

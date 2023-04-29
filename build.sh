@@ -15,6 +15,7 @@ rpm-ostree override remove firefox firefox-langpacks
 pushd /etc/yum.repos.d
 wget https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-38.repo
+wget https://copr.fedorainfracloud.org/coprs/elxreno/bees/repo/fedora-38/elxreno-bees-fedora-38.repo
 
 #TODO: we can make this process much faster if we make rpm-ostree install them all in one shot
 echo "-- Installing RPMs defined in recipe.yml --"
@@ -26,7 +27,8 @@ done
 echo "---"
 
 
-rm david35mm-pamixer-fedora-37.repo
+rm david35mm-pamixer-fedora-38.repo
+rm elxreno-bees-fedora-38.repo
 rm tailscale.repo
 popd
 
