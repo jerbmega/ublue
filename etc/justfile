@@ -26,7 +26,7 @@ distrobox-ubuntu:
 setup-flatpaks:
   #!/bin/bash
   echo 'Installing flatpaks from the ublue recipe ...'
-  flatpaks=$(yq '.flatpaks[]' < /etc/ublue-recipe.yml)
+  flatpaks=$(yq '.flatpaks[]' < /usr/etc/ublue-recipe.yml)
   for pkg in $flatpaks; do \
       echo "Installing: ${pkg}" && \
       flatpak install --user --noninteractive flathub $pkg; \
@@ -56,8 +56,18 @@ setup-gaming:
   flatpak override com.usebottles.bottles --user --filesystem=xdg-data/applications 
   flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam 
   flatpak override --user --env=MANGOHUD=1 com.heroicgameslauncher.hgl 
- 
+
+nix-me-up:
+  echo 'Setting phasers to kill. Installing nix.'
+  /usr/bin/ublue-nix-install
+
 update:
+  #!/bin/bash
+  echo "Staging system update..."
   rpm-ostree update
+
+  echo "Updating Flatpaks..."
   flatpak update -y
+
+  echo "Updating Distroboxes..."
   distrobox upgrade -a

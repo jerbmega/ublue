@@ -1,10 +1,12 @@
+# Warning: only edit this file inside the images git repository.
+# If you are looking at this file in your root directory on your computer, editing it does nothing.
+
 # The image will be at ghcr.io/yourusername/name
 name: custom-ublue
 
 # The native container image to build on top of
-# images. 
 # Warning: Non-uBlue images might function unexpectly
-base-container: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/base-main
 
 # What fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated
@@ -19,6 +21,12 @@ description: jerbmega's custom ublue image
 # Place scripts in scripts/ and put the corresponding filename here
 scripts:
 #  - example.sh
+
+# a list of urls of .repo files that should be added to your system
+# this is the proper way to add copr repos to your image
+extrarepos:
+  # example:
+  # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-37/atim-starship-fedora-37.repo
 
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
