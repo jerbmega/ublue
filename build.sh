@@ -11,11 +11,6 @@ echo "---"
 # remove the default firefox (from fedora) in favor of the flatpak
 rpm-ostree override remove firefox firefox-langpacks
 
-# add extra repositories
-wget https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-wget https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-38.repo
-wget https://copr.fedorainfracloud.org/coprs/elxreno/bees/repo/fedora-38/elxreno-bees-fedora-38.repo
-
 repos=$(yq '.extrarepos[]' < /usr/etc/ublue-recipe.yml)
 if [[ -n "$repos" ]]; then
     echo "-- Adding repos defined in recipe.yml --"
@@ -33,11 +28,6 @@ for pkg in $(echo -e "$rpm_packages"); do \
     rpm-ostree install $pkg; \
 done
 echo "---"
-
-
-rm david35mm-pamixer-fedora-38.repo
-rm elxreno-bees-fedora-38.repo
-rm tailscale.repo
 
 pip install --prefix=/usr yafti
 pip install --prefix=/usr pywal

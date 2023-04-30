@@ -25,54 +25,55 @@ scripts:
 # a list of urls of .repo files that should be added to your system
 # this is the proper way to add copr repos to your image
 extrarepos:
-  # example:
-  # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-37/atim-starship-fedora-37.repo
+  - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+  - https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-37/david35mm-pamixer-fedora-38.repo
+  - https://copr.fedorainfracloud.org/coprs/elxreno/bees/repo/fedora-38/elxreno-bees-fedora-38.repo
 
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
-- alacritty
-- android-tools
-- arc-theme
-- bees
-- brightnessctl
-- dbus-x11
-- dunst
-- feh
-- file-roller
-- fontawesome-fonts
-- gvfs-mtp
-- i3
-- ImageMagick
-- la-capitaine-cursor-theme
-- libadwaita
-- libvirt-client
-- libvirt-daemon-kvm
-- lightdm-gtk
-- lxappearance
-- lxqt-policykit
-- maim
-- mousepad
-- google-noto-fonts-common
-- pamixer
-- papirus-icon-theme
-- pavucontrol
-- picom
-- playerctl
-- polybar
-- python3-pip
-- redshift
-- rofi
-- tailscale
-- thunar
-- thunar-archive-plugin
-- thunar-volman
-- tumbler
-- unclutter
-- xclip
-- xfce4-settings
-- xrandr
-- virt-manager
+  - alacritty
+  - android-tools
+  - arc-theme
+  - bees
+  - brightnessctl
+  - dbus-x11
+  - dunst
+  - feh
+  - file-roller
+  - fontawesome-fonts
+  - gvfs-mtp
+  - i3
+  - ImageMagick
+  - la-capitaine-cursor-theme
+  - libadwaita
+  - libvirt-client
+  - libvirt-daemon-kvm
+  - lightdm-gtk
+  - lxappearance
+  - lxqt-policykit
+  - maim
+  - mousepad
+  - google-noto-fonts-common
+  - pamixer
+  - papirus-icon-theme
+  - pavucontrol
+  - picom
+  - playerctl
+  - polybar
+  - python3-pip
+  - redshift
+  - rofi
+  - tailscale
+  - thunar
+  - thunar-archive-plugin
+  - thunar-volman
+  - tumbler
+  - unclutter
+  - xclip
+  - xfce4-settings
+  - xrandr
+  - virt-manager
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
