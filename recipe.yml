@@ -38,6 +38,7 @@ rpms:
   - bees
   - brightnessctl
   - dbus-x11
+  - docker-compose
   - dunst
   - feh
   - file-roller
