@@ -38,7 +38,6 @@ rpms:
   - bees
   - brightnessctl
   - dbus-x11
-  - docker
   - docker-compose
   - dunst
   - feh
@@ -62,6 +61,7 @@ rpms:
   - pavucontrol
   - picom
   - playerctl
+  - podman-docker
   - polybar
   - python3-pip
   - redshift
