@@ -61,6 +61,7 @@ rpms:
   - pavucontrol
   - picom
   - playerctl
+  - podman-docker
   - polybar
   - python3-pip
   - redshift
