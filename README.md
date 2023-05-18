@@ -1,6 +1,6 @@
 # My uBlue image
 
-[![build-ublue](https://github.com/jerbmega/ublue/actions/workflows/build.yml/badge.svg)](https://github.com/jerbmega/ublue/actions/workflows/build.yml)
+[![build-ublue](https://github.com/jerbmega/ublue/actions/workflows/build.yml/badge.svg?branch=live)](https://github.com/jerbmega/ublue/actions/workflows/build.yml)
 
 This is my personal uBlue image with i3 and extra system utilities. For better or worse, it's i3 and not Sway because some programs I use (looking at you, Discord) don't currently work properly over Wayland.
 
