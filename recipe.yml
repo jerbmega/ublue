@@ -60,6 +60,7 @@ rpm:
     - arc-theme
     - bees
     - brightnessctl
+    - ckb-next
     - dbus-x11
     - docker-compose
     - dunst
@@ -93,6 +94,7 @@ rpm:
     - thunar
     - thunar-archive-plugin
     - thunar-volman
+    - tlp
     - tumbler
     - unclutter
     - xclip
