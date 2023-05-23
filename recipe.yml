@@ -57,6 +57,7 @@ rpm:
   install:
     - alacritty
     - android-tools
+    - apcupsd
     - arc-theme
     - bees
     - brightnessctl
