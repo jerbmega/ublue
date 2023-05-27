@@ -49,6 +49,7 @@ rpm:
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://copr.fedorainfracloud.org/coprs/david35mm/pamixer/repo/fedora-%FEDORA_VERSION%/david35mm-pamixer-fedora-%FEDORA_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/elxreno/bees/repo/fedora-%FEDORA_VERSION%/elxreno-bees-fedora-%FEDORA_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/infiniteloop/HeadsetControl/repo/fedora-%FEDORA_VERSION%/infiniteloop-HeadsetControl-fedora-%FEDORA_VERSION%.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -69,6 +70,7 @@ rpm:
     - file-roller
     - fontawesome-fonts
     - gvfs-mtp
+    - headsetcontrol
     - i3
     - ImageMagick
     - la-capitaine-cursor-theme
