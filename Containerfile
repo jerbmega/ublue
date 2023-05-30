@@ -23,10 +23,6 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 # Copy the build script and all custom scripts.
 COPY scripts /tmp/scripts
 
-# Add uBlue akmods for hardware enablement (v4l2loopback etc)
-COPY --from=ghcr.io/ublue-os/akmods:38 /rpms/ /tmp/rpms
-RUN rpm-ostree install /tmp/rpms/*.rpm
-
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
