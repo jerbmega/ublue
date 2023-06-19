@@ -20,7 +20,7 @@ font pango:Noto Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec distrobox create -i ghcr.io/jerbmega/boxkit -n boxkit -Y && alacritty -e distrobox enter boxkit -- /bin/zsh
+bindsym $mod+Return exec alacritty -e distrobox enter boxkit -- /bin/zsh
 bindsym $mod+Shift+Return exec alacritty
 
 # kill focused window
@@ -187,7 +187,7 @@ exec nm-applet
 exec /usr/libexec/lxqt-policykit-agent
 exec unclutter
 exec /usr/bin/yafti /etc/yafti.yml
-exec distrobox stop boxkit && distrobox rm boxkit && podman pull ghcr.io/jerbmega/boxkit:latest
+exec distrobox assemble create --file /usr/share/ublue-os/boxkit.ini
 exec "${HOME}/.config/ublue/i3_autostart.sh"
 exec_always "${HOME}/.config/ublue/i3_autostart_always.sh"
 
