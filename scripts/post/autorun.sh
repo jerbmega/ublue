@@ -10,7 +10,7 @@ chmod +x /usr/etc/ublue-lightdm-workaround.sh
 rpm-ostree override remove distrobox
 git clone https://github.com/89luca89/distrobox/
 pushd distrobox
-git checkout main -b v1.5.0
+git checkout main -b v1.5.0.1
 ./install --prefix /usr
 popd
 yes | rm -r distrobox
