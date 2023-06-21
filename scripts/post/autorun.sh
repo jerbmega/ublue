@@ -11,7 +11,7 @@ rpm-ostree override remove distrobox
 git clone https://github.com/89luca89/distrobox/
 pushd distrobox
 git checkout main -b v1.5.0
-./install --prefix /usr/local
+./install --prefix /usr
 popd
 yes | rm -r distrobox
 
