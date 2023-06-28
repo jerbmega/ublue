@@ -70,6 +70,7 @@ rpm:
     - file-roller
     - fontawesome-fonts
     - gvfs-mtp
+    - gvfs-smb
     - headsetcontrol
     - i3
     - ImageMagick
