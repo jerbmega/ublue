@@ -64,6 +64,7 @@ rpm:
     - brightnessctl
     - ckb-next
     - dbus-x11
+    - distrobox
     - docker-compose
     - dunst
     - feh
