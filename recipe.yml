@@ -103,6 +103,7 @@ rpm:
     - tumbler
     - unclutter
     - xclip
+    - xdg-desktop-portal-gnome
     - xfce4-settings
     - xrandr
     - virt-manager
