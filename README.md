@@ -23,11 +23,3 @@ Maim is included in the base image which allows for custom screenshot scripts. T
 Place a screenshot script at `~/.config/ublue/i3_screenshot.sh`. This is executed by i3 when pressing Shift + Print Screen simultaneously.
 
 Place a regional screenshot script at `~/.config/ublue/i3_screenshot_region.sh`. This is executed by i3 when pressing Print Screen.
-
-## Verification
-
-These images are signed with sigstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
-
-    cosign verify --key cosign.pub ghcr.io/jerbmega/custom-ublue
-
-If you're forking this repo, the uBlue website has [instructions](https://ublue.it/making-your-own/) for setting up signing properly.
